@@ -1,8 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link rel="stylesheet" href="styles.css">
         <title>Advanced search</title>
     </head>
+   
+    <form action="https://www.google.com/search?" method="GET">
+
+            <div class ="flex-container">
+            <div>
+                <p>All these words: <input type="text" name="as_q"></p>
+            </div>
+
+            <div >
+                <p>this exact word or phrase: <input type="text" name="as_epq"></p>
+            </div>
+
+            <div >
+                <p>any of these words: <input type="text" name="as_oq"></p>
+            </div>
+
+            <div >
+                <p>none of these words: <input type="text" name="as_eq"></p>
+            </div>
+        </div>
+
+        <input class="buttonc"   type="submit" value="Google Search">
+    </form>
+
+        <button class="button-container" onclick="document.location='index.html'">Google Search</button>
+
     <body>
     </body>
 </html>

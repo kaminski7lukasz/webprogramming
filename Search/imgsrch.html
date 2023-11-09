@@ -1,8 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link rel="stylesheet" href="styles.css">
         <title>Image search</title>
     </head>
     <body>
+        <form  class="form" action="http://images.google.com/images" method="GET">
+            <H1>Google</H1>
+            <input id="search_bar" type="text" name="q" >
+            <input id="search_button" type="submit" value="Image Search">
+        </form>
+        <div class="button-container">
+            <button onclick="document.location='index.html'">Google Search</button>
+        </div>
     </body>
 </html>

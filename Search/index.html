@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Search</title>
+        <link rel="stylesheet" href="styles.css">
+
     </head>
     <body>
-        <form action="https://www.google.com/search">
-            <input type="text" name="q">
-            <input type="submit" value="Google Search">
-        </form>
-        <!--target="_top"add link to image search and advanced search in the right corner-->
-        <a target="_top" href="imgsrch.html">Image search</a>
-        <a target="_top" href="advsrch.html">Advanced search</a>
-        <button onclick="document.location='imgsrch.html'">Images</button> 
+         <!--Formatting the style-->
+            <form  class="form" action="https://www.google.com/search">
+                <H1>Google</H1>
+                <input id="search_bar" type="text" name="q">
+                <input id="search_button" type="submit" value="Google Search">
+            </form>
+            
+        <!--adds a link to image search and advanced search in the right corner-->
+        <div class="button-container">
+            <button class="button" onclick="document.location='imgsrch.html'">Image search</button>
+            <button class="button" onclick="document.location='advsrch.html'">Advanced search</button>
+        </div>
     </body>
 </html>
